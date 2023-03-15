@@ -7,15 +7,11 @@ Faça uma lista de comprar com listas
 - Não permita que o programa quebre com erros de ídices inexistenste na lista
 """
 
-# alimento = ['arroz', 'feijoa', 'macarrao', 'batata']
-# bebida = ['coca', 'agua', 'suco', 'cafe']
-
 alimento = []
 bebida = []
 
-
 while True:
-
+    print(linha)
     entrada = input('Escolha uma função desejada:\n'
                     '[I]nserir\n'
                     '[V]erificar ou Apagar\n'
@@ -26,9 +22,9 @@ while True:
         if entrada == 'I':  # inserir item
 
             produto = input('Oque deseja inseir? ')
-            categoria = int(input('Em qual lista?\n'
+            categoria = int(input('Em qual lista deseja inserir?\n'
                             '[1]Alimento\n'
-                                  '[2]Bebidas: '))
+                            '[2]Bebidas: '))
 
             if categoria == 1:
                 alimento.append(produto)
@@ -104,5 +100,3 @@ while True:
 
     except:
         print('Digite o valor da função ou categoria carrote!')
-
-    # os.system('cls')
