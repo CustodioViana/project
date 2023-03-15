@@ -6,8 +6,10 @@ Faça uma lista de comprar com listas
 - Não permita que o programa quebre com erros de ídices inexistenste na lista
 """
 
+
 alimento = []
 bebida = []
+
 
 while True:
     print(linha)
@@ -72,7 +74,7 @@ while True:
                                 print('Número inválido')
                         except ValueError:
                             print('Digite um número válido')
-                    print(linha)
+                            
                     if apg_cate == 'B':
                         apg = input('Escolha o item para apagar: ')
                         try:
