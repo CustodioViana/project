@@ -28,19 +28,19 @@ while True:
             break
 
         elif operador == '1':
-            print(f'{valor_1} + {valor_2} = {adicao:.2}')
+            print(f'{valor_1} + {valor_2} = {adicao:.2f}')
             print(linha)
         elif operador == '2':
-            print(f'{valor_1} - {valor_2} = {subtracao:.2}')
+            print(f'{valor_1} - {valor_2} = {subtracao:.2f}')
             print(linha)
         elif operador == '3':
-            print(f'{valor_1} / {valor_2} = {divisao:.2}')
+            print(f'{valor_1} / {valor_2} = {divisao:.2f}')
             print(linha)
         elif operador == '4':
-            print(f'{valor_1} * {valor_2} = {multiplicacao:.2}')
+            print(f'{valor_1} * {valor_2} = {multiplicacao:.2f}')
             print(linha)
         elif operador == '5':
-            print(f'{valor_1} ** {valor_2} = {pontenciacao:.2}')
+            print(f'{valor_1} ** {valor_2} = {pontenciacao:.2f}')
             print(linha)
         else:
             print(f'Por favor, insita um operador válido, você digitou {operador}')
