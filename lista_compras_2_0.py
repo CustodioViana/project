@@ -1,6 +1,5 @@
 import os
-linha = ('-\n'
-         '-')
+linha = (5*'-')
 """
 Faça uma lista de comprar com listas
 - O usuário deve ter possibilidade de inserir, apagar e listar valores da sua lista
@@ -25,6 +24,7 @@ while True:
             categoria = int(input('Em qual lista deseja inserir?\n'
                             '[1]Alimento\n'
                             '[2]Bebidas: '))
+            print('-\n')
 
             if categoria == 1:
                 alimento.append(produto)
@@ -46,18 +46,20 @@ while True:
             print('ALIMENTO')
             for ver in range(len(alimento)):
                 print(ver, alimento[ver])
-
+            print(linha)
             print('BEBIDA')
             for ver in range(len(bebida)):
                 print(ver, bebida[ver])
+            print(linha)
             escolha = input('Deseja apagar? [S]im ou [N]ão: ').upper()
             if escolha == 'N':
                 continue
 
             elif escolha == 'S':
-                apg_cate = input('Escolha a categoria\n'
+                apg_cate = input('Escolha a categoria em que o item está\n'
                                  '[A]limeto\n'
                                  '[B]ebida: ').upper()
+                print(linha)
                 try:    
                     if apg_cate == 'A':
                         apg = input('Escolha o item para apagar: ')
@@ -70,7 +72,7 @@ while True:
                                 print('Número inválido')
                         except ValueError:
                             print('Digite um número válido')
-
+                    print(linha)
                     if apg_cate == 'B':
                         apg = input('Escolha o item para apagar: ')
                         try:
