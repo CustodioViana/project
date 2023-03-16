@@ -43,6 +43,7 @@ while True:
                 resultado_1 += int(digito) * cr_1
                 cr_1 -= 1
             dig_1 = (resultado_1 * 10) % 11
+            dig_1 = dig_1 if dig_1 <= 9 else 0
 
             dig_10 = dig_9 + str(dig_1)
             cr_2 = 11
@@ -51,6 +52,7 @@ while True:
                 resutado_2 += int(digito) * cr_2
                 cr_2 -= 1
             dig_2 = (resutado_2 * 10) % 11
+            dig_2 = dig_2 if dig_2 <= 9 else 0
 
             cpf_gerado = f'{dig_9}{dig_1}{dig_2}'
 
@@ -69,6 +71,7 @@ while True:
                     resultado_1 += int(digito) * cr_1
                     cr_1 -= 1
                 dig_1 = (resultado_1 * 10) % 11
+                dig_1 = dig_1 if dig_1 <= 9 else 0
 
                 dig_10 = dig_9 + str(dig_1)
                 cr_2 = 11
@@ -77,6 +80,7 @@ while True:
                     resutado_2 += int(digito) * cr_2
                     cr_2 -= 1
                 dig_2 = (resutado_2 * 10) % 11
+                dig_2 = dig_2 if dig_2 <= 9 else 0
 
                 cpf_gerado = f'{dig_9}{dig_1}{dig_2}'
 
@@ -103,6 +107,7 @@ while True:
                 resultado_1 += int(digito) * cr_1
                 cr_1 -= 1
             dig_1 = (resultado_1 * 10) % 11
+            dig_1 = dig_1 if dig_1 <= 9 else 0
 
             dig_10 = dig_9 + str(dig_1)
             cr_2 = 11
@@ -111,7 +116,8 @@ while True:
                 resutado_2 += int(digito) * cr_2
                 cr_2 -= 1
             dig_2 = (resutado_2 * 10) % 11
-
+            dig_2 = dig_2 if dig_2 <= 9 else 0
+        
             cpf_gerado = f'{dig_9}{dig_1}{dig_2}'
 
             if cpf == cpf_gerado:
